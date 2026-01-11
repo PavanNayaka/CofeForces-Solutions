@@ -1,0 +1,29 @@
+    //package HashingQ;
+    import java.util.*;
+    public class HMVideo58 {
+     
+    	public static void main(String[] args) {
+    		Scanner sc=new Scanner(System.in);
+    		int n;
+    		n=sc.nextInt();
+    		ArrayList<String> ans=new ArrayList<>();
+     
+    		for(int i=0;i<=n-1;i++) {
+    			String s=sc.next();
+    			if(s.length()>10) {
+    				//calculate
+    	s=String.valueOf(s.charAt(0))+ String.valueOf(s.length()-2)+String.valueOf(s.charAt(s.length()-1));
+    			}
+    			ans.add(s);
+    		}
+    		
+    		for(String i:ans) {
+    			System.out.println(i);
+    		}
+    		
+    		
+    		
+     
+    	}
+     
+    }
